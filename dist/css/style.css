@@ -56,6 +56,7 @@ body.light {
   --backgroundCardHover: hsl(227, 47%, 96%);
   --textLight: hsl(228, 12%, 44%);
   --textBold: hsl(230, 17%, 14%);
+  --toggle-bg-hover: linear-gradient(225deg, var(--toggle-bg-start) 0%, var(--toggle-bg-end) 98.02%);
   --toggle-bg: linear-gradient(225deg, var(--toggle-bg-start-light) 0%, var(--toggle-bg-start-light) 98.02%);
   --toggle-button: hsl(227, 47%, 96%);
   /*   --background: var(--light-bg);
@@ -74,6 +75,7 @@ body.dark {
   --backgroundCardHover: hsl(228, 26%, 27%);
   --textLight: hsl(228, 34%, 66%);
   --textBold: hsl(0, 0%, 100%);
+  --toggle-bg-hover:  linear-gradient(225deg, var(--toggle-bg-start-light) 0%, var(--toggle-bg-start-light) 98.02%);
   --toggle-bg:  linear-gradient(225deg, var(--toggle-bg-start) 0%, var(--toggle-bg-end) 98.02%);
   --toggle-button: hsl(230, 17%, 14%);
   /*   --background: var(--dark-bg);
@@ -131,12 +133,18 @@ nav .titolo {
 
 nav .titolo h1 {
   color: var(--textBold);
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  nav .titolo h1 {
+    font-size: 26px;
+  }
+}
+
 nav .titolo h5 {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 8px;
   font-weight: 700;
   color: var(--textLight);
@@ -168,7 +176,7 @@ nav .darkMode {
 nav .darkMode p {
   margin-right: 9px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--textLight);
 }
 
@@ -179,6 +187,8 @@ nav .darkMode .toogle {
   height: 25px;
   position: relative;
   border-radius: 20px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 nav .darkMode .toogle:before {
@@ -192,6 +202,11 @@ nav .darkMode .toogle:before {
   background-color: var(--toggle-button);
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+
+nav .darkMode .toogle:hover {
+  display: block;
+  background-image: var(--toggle-bg-hover);
 }
 
 .big {
@@ -255,7 +270,7 @@ nav .darkMode .toogle:before {
 
 .big .big-item .name-social p {
   color: var(--textLight);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -264,7 +279,7 @@ nav .darkMode .toogle:before {
 }
 
 .big .big-item .follower p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -272,7 +287,7 @@ nav .darkMode .toogle:before {
 }
 
 .big .big-item .follower p span {
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 700;
   margin-bottom: 15px;
   color: var(--textBold);
@@ -293,7 +308,7 @@ nav .darkMode .toogle:before {
 
 .big .big-item .trend p {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--limegreen);
 }
 
@@ -334,6 +349,7 @@ nav .darkMode .toogle:before {
 }
 
 .overview h2 {
+  font-size: 22px;
   color: var(--textBold);
 }
 
@@ -391,7 +407,7 @@ nav .darkMode .toogle:before {
 
 .overview .small .small-item .name-social p {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--textLight);
 }
 
@@ -407,7 +423,7 @@ nav .darkMode .toogle:before {
 
 .overview .small .small-item .data .indice p {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 26px;
   color: var(--textBold);
 }
 
@@ -420,7 +436,7 @@ nav .darkMode .toogle:before {
           align-items: center;
   color: var(--limegreen);
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .overview .small .small-item .data .red-trend {

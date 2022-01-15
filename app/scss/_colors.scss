@@ -58,6 +58,7 @@ body.light {
   --textLight: hsl(228, 12%, 44%);
   --textBold: hsl(230, 17%, 14%);
 
+  --toggle-bg-hover: linear-gradient(225deg, var(--toggle-bg-start) 0%, var(--toggle-bg-end) 98.02%);
   --toggle-bg: linear-gradient(225deg, var(--toggle-bg-start-light) 0%, var(--toggle-bg-start-light) 98.02%);
   --toggle-button: hsl(227, 47%, 96%);
 
@@ -78,6 +79,7 @@ body.dark {
   --textLight: hsl(228, 34%, 66%);
   --textBold: hsl(0, 0%, 100%);
 
+  --toggle-bg-hover:  linear-gradient(225deg, var(--toggle-bg-start-light) 0%, var(--toggle-bg-start-light) 98.02%);
   --toggle-bg:  linear-gradient(225deg, var(--toggle-bg-start) 0%, var(--toggle-bg-end) 98.02%);
   --toggle-button: hsl(230, 17%, 14%);
   /*   --background: var(--dark-bg);
