@@ -110,7 +110,7 @@ body {
   body {
     padding: 0;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 37px;
   }
 }
 
@@ -252,7 +252,7 @@ nav .darkMode .toogle:hover {
 }
 
 .big .big-item .name-social {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -285,7 +285,7 @@ nav .darkMode .toogle:hover {
 .big .big-item .follower .number-f {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   color: var(--textBold);
 }
 
@@ -423,6 +423,9 @@ nav .darkMode .toogle:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .overview .small .small-item .data .indice p {

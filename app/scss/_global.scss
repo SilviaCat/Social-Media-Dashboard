@@ -19,7 +19,7 @@ body {
   @media only screen and (min-width: 1150px) {
     padding: 0;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 37px;
   }
 }
 
@@ -115,7 +115,7 @@ nav {
     position: relative;
     overflow: hidden;
     .name-social {
-      margin-bottom: 30px;
+      margin-bottom: 21px;
       justify-content: center;
       display: flex;
       align-items: center;
@@ -139,7 +139,7 @@ nav {
       .number-f {
         font-size: 3.5rem;
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: 3px;
         color: var(--textBold);
       }
     }
@@ -233,6 +233,7 @@ nav {
         display: flex;
         margin-top: 25px;
         justify-content: space-between;
+        align-items: flex-end;
         .indice {
           p {
             font-weight: 700;
