@@ -11,23 +11,21 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1110px;
   margin: 0 auto 1.5625rem;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 0 1.5625rem;
   background: var(--background);
   font-size: 14px;
   color: var(--text-color);
   @media only screen and (min-width: 1150px) {
- /*    padding-left: 165px;
-    padding-right: 165px; */
     padding: 0;
     margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
 nav {
   @media only screen and (min-width: 1150px) {
     display: flex;
-    margin-top: 40px;
     justify-content: space-between;
   }
 
@@ -36,13 +34,13 @@ nav {
       color: var(--textBold);
       font-size: 1.75rem;
       margin-bottom: 0;
-      @media only screen and (min-width: 1150px) {
+     /*  @media only screen and (min-width: 1150px) {
         font-size: 26px;
-      }
+      } */
     }
     h5 {
       font-size: 0.875rem;
-      margin-top: 8px;
+      margin-top: 0;
       font-weight: 700;
       color: var(--textLight);
     }
@@ -131,18 +129,18 @@ nav {
       }
     }
     .follower {
-      p {
+      .follower-text {
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.3125rem;
         text-transform: uppercase;
         color: var(--textLight);
-        span {
-          font-size:3.5rem;
-          font-weight: 700;
-          margin-bottom: 15px;
-          color: var(--textBold);
-        }
+      }
+      .number-f {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: var(--textBold);
       }
     }
     .trend {
@@ -150,6 +148,9 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
+      img{
+        margin-right: 4px;
+      }
       p {
         font-weight: 700;
         font-size: 14px;
@@ -165,10 +166,10 @@ nav {
     }
   }
   .facebook {
-    border-top: 8px solid var(--facebook);
+    border-top: 4px solid var(--facebook);
   }
   .twitter {
-    border-top: 8px solid var(--twitter);
+    border-top: 4px solid var(--twitter);
   }
   .instagram {
     padding-top: 38px;
@@ -177,19 +178,19 @@ nav {
     content: "";
     position: absolute;
     width: 100%;
-    height: 8px;
+    height: 4px;
     background-image: var(--instagram);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     top: 0;
     left: 0;
   }
   .youtube {
-    border-top: 8px solid var(--youtube);
+    border-top: 4px solid var(--youtube);
   }
 }
 
 .overview {
-  margin-top: 40px;
+  margin-top: 15px;
   h2 {
     font-size: 1.5rem;
     color: var(--textBold);
@@ -245,6 +246,9 @@ nav {
           color: var(--limegreen);
           font-weight: 700;
           font-size: 14px;
+          img{
+            margin-right: 4px;
+          }
         }
         .red-trend {
           display: flex;

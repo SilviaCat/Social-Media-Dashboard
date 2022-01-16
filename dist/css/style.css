@@ -99,7 +99,7 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1110px;
   margin: 0 auto 1.5625rem;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 0 1.5625rem;
   background: var(--background);
   font-size: 14px;
@@ -108,10 +108,9 @@ body {
 
 @media only screen and (min-width: 1150px) {
   body {
-    /*    padding-left: 165px;
-    padding-right: 165px; */
     padding: 0;
     margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
@@ -120,7 +119,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 40px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -136,17 +134,14 @@ nav .titolo h1 {
   color: var(--textBold);
   font-size: 1.75rem;
   margin-bottom: 0;
-}
-
-@media only screen and (min-width: 1150px) {
-  nav .titolo h1 {
-    font-size: 26px;
-  }
+  /*  @media only screen and (min-width: 1150px) {
+        font-size: 26px;
+      } */
 }
 
 nav .titolo h5 {
   font-size: 0.875rem;
-  margin-top: 8px;
+  margin-top: 0;
   font-weight: 700;
   color: var(--textLight);
 }
@@ -279,7 +274,7 @@ nav .darkMode .toogle:hover {
   margin-right: 9px;
 }
 
-.big .big-item .follower p {
+.big .big-item .follower .follower-text {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.3125rem;
@@ -287,7 +282,7 @@ nav .darkMode .toogle:hover {
   color: var(--textLight);
 }
 
-.big .big-item .follower p span {
+.big .big-item .follower .number-f {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -307,6 +302,10 @@ nav .darkMode .toogle:hover {
           justify-content: center;
 }
 
+.big .big-item .trend img {
+  margin-right: 4px;
+}
+
 .big .big-item .trend p {
   font-weight: 700;
   font-size: 14px;
@@ -323,11 +322,11 @@ nav .darkMode .toogle:hover {
 }
 
 .big .facebook {
-  border-top: 8px solid var(--facebook);
+  border-top: 4px solid var(--facebook);
 }
 
 .big .twitter {
-  border-top: 8px solid var(--twitter);
+  border-top: 4px solid var(--twitter);
 }
 
 .big .instagram {
@@ -338,19 +337,19 @@ nav .darkMode .toogle:hover {
   content: "";
   position: absolute;
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-image: var(--instagram);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   top: 0;
   left: 0;
 }
 
 .big .youtube {
-  border-top: 8px solid var(--youtube);
+  border-top: 4px solid var(--youtube);
 }
 
 .overview {
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .overview h2 {
@@ -442,6 +441,10 @@ nav .darkMode .toogle:hover {
   color: var(--limegreen);
   font-weight: 700;
   font-size: 14px;
+}
+
+.overview .small .small-item .data .trend img {
+  margin-right: 4px;
 }
 
 .overview .small .small-item .data .red-trend {
